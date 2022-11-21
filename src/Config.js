@@ -1,6 +1,3 @@
-import IfPropertyEditor from "./PropertyPanel/IfPropertyEditor";
-import AssignPropertyEditor from "./PropertyPanel/AssignPropertyEditor";
-import LogPropertyEditor from "./PropertyPanel/LogPropertyEditor";
 import KafkaSourcePropertyEditor from "./PropertyPanel/KafkaSourcePropertyEditor";
 import FilterPropertyEditor from "./PropertyPanel/FilterPropertyEditor";
 import KafkaSinkPropertyEditor from "./PropertyPanel/KafkaSinkPropertyEditor";
@@ -9,15 +6,6 @@ import DeleteVariablePropertyEditor from "./PropertyPanel/DeleteVariableProperty
 
 
 const Config = {
-    if: {
-        propertyEditorComponent: IfPropertyEditor
-    },
-    assign: {
-        propertyEditorComponent: AssignPropertyEditor
-    },
-    log: {
-        propertyEditorComponent: LogPropertyEditor
-    },
     kafkaSource: {
         propertyEditorComponent: KafkaSourcePropertyEditor
     },

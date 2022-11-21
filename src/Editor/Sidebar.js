@@ -10,21 +10,6 @@ const Sidebar = () => {
 
     return (
         <aside>
-            {/* <div className="node node-start" onDragStart={(event) => onDragStart(event, "start")} draggable>
-                Start
-            </div>
-            <div className="node node-if" onDragStart={(event) => onDragStart(event, "if")} draggable>
-                If
-            </div>
-            <div className="node node-assign" onDragStart={(event) => onDragStart(event, "assign")} draggable>
-                Assign
-            </div>
-            <div className="node node-log" onDragStart={(event) => onDragStart(event, "log")} draggable>
-                Log
-            </div>
-            <div className="node node-end" onDragStart={(event) => onDragStart(event, "end")} draggable>
-                End
-            </div> */}
             <div className="node" onDragStart={(event) => onDragStart(event, "kafkaSource")} draggable>
                 Kafka source
             </div>

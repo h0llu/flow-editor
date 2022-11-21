@@ -4,27 +4,6 @@
     background-color: #fff;
 }
 
-.node.node-start {
-    color: green;
-}
-
-.node.node-end {
-    color: red;
-}
-
-.node.node-if {
-    color: blue;
-}
-
-.node.node-log {
-    background-color: #ddd;
-}
-
-.node.node-assign,
-.node.node-log {
-    color: black;
-}
-
 .selected .node {
     box-shadow: 0px 0px 19px 12px #DBDBDB;
     border-color: #000;

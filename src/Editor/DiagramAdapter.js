@@ -1,11 +1,6 @@
 import { useState, useRef } from "react";
 import ReactFlow, { addEdge, removeElements, isNode } from "react-flow-renderer";
 
-import IfNode from "../ReactFlow/Nodes/IfNode";
-import StartNode from "../ReactFlow/Nodes/StartNode";
-import EndNode from "../ReactFlow/Nodes/EndNode";
-import AssignNode from "../ReactFlow/Nodes/AssignNode";
-import ConsoleCustomNode from "../ReactFlow/Nodes/ConsoleNode";
 import KafkaSourceNode from "../ReactFlow/Nodes/KafkaSourceNode";
 import FilterNode from "../ReactFlow/Nodes/FilterNode";
 import AddVariable from "../ReactFlow/Nodes/AddVariableNode";
@@ -13,11 +8,6 @@ import DeleteVariable from "../ReactFlow/Nodes/DeleteVariableNode";
 import KafkaSink from "../ReactFlow/Nodes/KafkaSinkNode";
 
 const nodeTypes = {
-    // if: IfNode,
-    // start: StartNode,
-    // end: EndNode,
-    // assign: AssignNode,
-    // log: ConsoleCustomNode,
     kafkaSource: KafkaSourceNode,
     filter: FilterNode,
     addVariable: AddVariable,
