@@ -9,10 +9,8 @@
 
 ## Testing it out
 
-Feel free to test out the project and let me know if you have any comments or suggestions!
+Just execute the command:
 
-Just execute the ff. command:
-
-```
+```bash
 npm start
 ```
