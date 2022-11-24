@@ -3,19 +3,23 @@ import ReactFlow, { addEdge, removeElements, isNode } from "react-flow-renderer"
 
 import KafkaSourceNode from "../ReactFlow/Nodes/KafkaSourceNode";
 import FilterNode from "../ReactFlow/Nodes/FilterNode";
-import AddVariable from "../ReactFlow/Nodes/AddVariableNode";
-import DeleteVariable from "../ReactFlow/Nodes/DeleteVariableNode";
-import KafkaSink from "../ReactFlow/Nodes/KafkaSinkNode";
+import AddVariableNode from "../ReactFlow/Nodes/AddVariableNode";
+import DeleteVariableNode from "../ReactFlow/Nodes/DeleteVariableNode";
+import KafkaSinkNode from "../ReactFlow/Nodes/KafkaSinkNode";
+import FileSourceNode from "../ReactFlow/Nodes/FileSourceNode";
+import FileSinkNode from "../ReactFlow/Nodes/FileSinkNode";
 
 const nodeTypes = {
     kafkaSource: KafkaSourceNode,
+    fileSource: FileSourceNode,
     filter: FilterNode,
-    addVariable: AddVariable,
-    deleteVariable: DeleteVariable,
-    kafkaSink: KafkaSink
+    addVariable: AddVariableNode,
+    deleteVariable: DeleteVariableNode,
+    kafkaSink: KafkaSinkNode,
+    fileSink: FileSinkNode
 };
 
-let id = 2;
+let id = 1;
 const getId = () => `node_${id++}`;
 
 const DiagramAdapter = ({ nodes, setNodes, onAddNode, onAddEdge, onDelete, onActivateNode, onDeactivateAll }) => {

@@ -13,6 +13,9 @@ const Sidebar = () => {
             <div className="node" onDragStart={(event) => onDragStart(event, "kafkaSource")} draggable>
                 Kafka source
             </div>
+            <div className="node" onDragStart={(event) => onDragStart(event, "fileSource")} draggable>
+                File source
+            </div>
             <div className="node" onDragStart={(event) => onDragStart(event, "filter")} draggable>
                 Filter
             </div>
@@ -24,6 +27,9 @@ const Sidebar = () => {
             </div>
             <div className="node" onDragStart={(event) => onDragStart(event, "kafkaSink")} draggable>
                 Kafka sink
+            </div>
+            <div className="node" onDragStart={(event) => onDragStart(event, "fileSink")} draggable>
+                File sink
             </div>
 
         </aside>

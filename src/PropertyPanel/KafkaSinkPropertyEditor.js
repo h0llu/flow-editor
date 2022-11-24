@@ -38,7 +38,3 @@ const KafkaSinkPropertyEditor = ({ codeData, updateData }) => {
 };
 
 export default KafkaSinkPropertyEditor;
-
-// {
-    //     "dataType": "json",
-//   }

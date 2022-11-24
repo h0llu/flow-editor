@@ -1,17 +1,8 @@
 import SchemaPropertyEditor from "./SchemaPropertyEditor";
 
-const KafkaSourcePropertyEditor = ({ codeData, updateData }) => {
+const FileSourcePropertyEditor = ({ codeData, updateData }) => {
     const localData = codeData.data;
 
-    const onTopicChange = (event) => {
-        localData.topic = event.target.value;
-        updateData(localData);
-    };
-
-    const onBootstrapServerChange = (event) => {
-        localData.bootstrapServer = event.target.value;
-        updateData(localData);
-    };
 
     const onSourceNameChange = (event) => {
         localData.sourceName = event.target.value;
@@ -28,22 +19,22 @@ const KafkaSourcePropertyEditor = ({ codeData, updateData }) => {
         updateData(localData);
     };
 
+    const onFilePathChange = (event) => {
+        localData.filePath = event.target.value;
+        updateData(localData);
+    }
+
     return (
         <div>
-            <div>
-                <strong>Topic:</strong>
-                <br />
-                <input name="topic" type="text" defaultValue={localData.topic} onChange={onTopicChange} placeholder="Topic" />
-            </div>
-            <div>
-                <strong>Bootstrap server:</strong>
-                <br />
-                <input name="bootstrap-server" type="text" defaultValue={localData.bootstrapServer} onChange={onBootstrapServerChange} placeholder="Bootstrap Server" />
-            </div>
             <div>
                 <strong>Source name:</strong>
                 <br />
                 <input name="sourceName" type="text" defaultValue={localData.sourceName} onChange={onSourceNameChange} placeholder="Source name" />
+            </div>
+            <div>
+                <strong>File path:</strong>
+                <br />
+                <input name="filePath" type="text" defaultValue={localData.filePath} onChange={onFilePathChange} placeholder="File path" />
             </div>
             <div>
                 <strong>Watermark type:</strong>
@@ -65,4 +56,4 @@ const KafkaSourcePropertyEditor = ({ codeData, updateData }) => {
     );
 };
 
-export default KafkaSourcePropertyEditor;
+export default FileSourcePropertyEditor;

@@ -14,8 +14,14 @@ const Canvas = () => {
     const [codeData, setCodeData] = useState({});
 
     const [outputJson, setOutputJson] = useState({
-        "nodes": [],
-        "edges": []
+        scenarioConfig: {
+            "jobName": "Test scenario",
+            "description": "Test scenario description",
+            "parallelism": 1
+        },
+        nodes: [],
+        edges: []
+
     });
 
     const [activeCodeData, setActiveCodeData] = useState({ id: null, type: "" });
@@ -57,6 +63,9 @@ const Canvas = () => {
         if (newNodeType === "kafkaSource") {
             node.type = "source";
             node.sourceType = "kafkaSource";
+        } else if (newNodeType === "fileSource") {
+            node.type = "source";
+            node.sourceType = "fileSource";
         } else if (newNodeType === "filter") {
             node.type = "transform";
             node.transformType = "filter";
@@ -69,6 +78,9 @@ const Canvas = () => {
         } else if (newNodeType === "kafkaSink") {
             node.type = "sink";
             node.sinkType = "kafkaSink";
+        } else if (newNodeType === "fileSink") {
+            node.type = "sink";
+            node.sinkType = "fileSink";
         }
 
         outputJson.nodes.push(node);

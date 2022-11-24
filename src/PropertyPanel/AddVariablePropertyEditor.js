@@ -53,7 +53,3 @@ const AddVariablePropertyEditor = ({ codeData, updateData }) => {
 };
 
 export default AddVariablePropertyEditor;
-
-// "variableName": "newAmount",
-// "variableType": "Integer",
-// "variableExpression": "amount / 3"
