@@ -5,6 +5,7 @@ import AddVariablePropertyEditor from "./PropertyPanel/AddVariablePropertyEditor
 import DeleteVariablePropertyEditor from "./PropertyPanel/DeleteVariablePropertyEditor";
 import FileSourcePropertyEditor from "./PropertyPanel/FileSourcePropertyEditor";
 import FileSinkPropertyEditor from "./PropertyPanel/FileSinkPropertyEditor";
+import MapPropertyEditor from "./PropertyPanel/MapPropertyEditor";
 
 
 const Config = {
@@ -16,6 +17,9 @@ const Config = {
     },
     filter: {
         propertyEditorComponent: FilterPropertyEditor
+    },
+    map: {
+        propertyEditorComponent: MapPropertyEditor
     },
     kafkaSink: {
         propertyEditorComponent: KafkaSinkPropertyEditor

@@ -3,6 +3,7 @@ import ReactFlow, { addEdge, removeElements, isNode } from "react-flow-renderer"
 
 import KafkaSourceNode from "../ReactFlow/Nodes/KafkaSourceNode";
 import FilterNode from "../ReactFlow/Nodes/FilterNode";
+import MapNode from "../ReactFlow/Nodes/MapNode";
 import AddVariableNode from "../ReactFlow/Nodes/AddVariableNode";
 import DeleteVariableNode from "../ReactFlow/Nodes/DeleteVariableNode";
 import KafkaSinkNode from "../ReactFlow/Nodes/KafkaSinkNode";
@@ -13,6 +14,7 @@ const nodeTypes = {
     kafkaSource: KafkaSourceNode,
     fileSource: FileSourceNode,
     filter: FilterNode,
+    map: MapNode,
     addVariable: AddVariableNode,
     deleteVariable: DeleteVariableNode,
     kafkaSink: KafkaSinkNode,

@@ -69,6 +69,9 @@ const Canvas = () => {
         } else if (newNodeType === "filter") {
             node.type = "transform";
             node.transformType = "filter";
+        } else if (newNodeType === "map") {
+            node.type = "transform";
+            node.transformType = "map";
         } else if (newNodeType === "addVariable") {
             node.type = "transform";
             node.transformType = "addVariable";

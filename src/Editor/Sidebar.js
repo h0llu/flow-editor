@@ -19,6 +19,9 @@ const Sidebar = () => {
             <div className="node" onDragStart={(event) => onDragStart(event, "filter")} draggable>
                 Filter
             </div>
+            <div className="node" onDragStart={(event) => onDragStart(event, "map")} draggable>
+                Map
+            </div>
             <div className="node" onDragStart={(event) => onDragStart(event, "addVariable")} draggable>
                 Add variable
             </div>
